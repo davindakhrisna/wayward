@@ -1,0 +1,20 @@
+.product-category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.product-container {
+  margin: 0;
+}
+
+select {
+  margin: 0 0.5rem;
+  background-color: #000;
+  color: #faf3e3;
+  font-weight: 600;
+  border: solid 1px #faf3e3;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+}

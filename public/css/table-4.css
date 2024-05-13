@@ -1,0 +1,16 @@
+.table-4 tr th:first-child {
+  width: 30%;
+}
+
+.table-4 th:nth-child(2) {
+  width: 30%;
+}
+
+.table-4 th:nth-child(3) {
+  width: 30%;
+}
+
+.table-4 th:last-child {
+  width: 10%;
+  text-align: center;
+}
