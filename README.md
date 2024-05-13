@@ -67,3 +67,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 "# Wayward-Ecommerce-Laravel" 
 "# Wayward-Ecommerce-Laravel" 
 "# wayward-ecommerce" 
+"# wayward" 
