@@ -16,8 +16,9 @@
             <h3>Products</h3>
             <a href="{{url('add_product')}}" class="add-admin"><i class="fa-solid fa-plus"></i>Add New</a>
           </div>
-          <table class="table-5">
+          <table class="table-6">
             <tr>
+              <th>Product Image</th>
               <th>Product Name</th>
               <th>Product Category</th>
               <th>Product Size</th>
@@ -28,13 +29,14 @@
             @foreach ($data as $data)
 
             <tr>
+                <td><img src="{{ asset($data->product_image) }}" class="admin-product-image" /></td>
                 <td>{{$data->product_name}}</td>
                 <td>{{$data->category_name}}</td>
                 <td>{{$data->product_size}}</td>
                 <td>{{$data->product_price}}</td>
                 <td class="actions">
-                <a href="{{url('crud_edit_product', $data->id)}}" class="edit-admin"><i class="fa-solid fa-pen"></i></a>
-                <a onclick="confirmation(event)" href="{{url('crud_delete_product', $data->id)}}" class="delete-admin"><i class="fa-solid fa-trash-can"></i></a>
+                <button class="edit-admin"><a href="{{url('crud_edit_product', $data->id)}}"><i class="fa-solid fa-pen"></i></a></button>
+                <button class="delete-admin"><a onclick="confirmation(event)" href="{{url('crud_delete_product', $data->id)}}"><i class="fa-solid fa-trash-can"></i></a></button>
                 </td>
             </tr>
 

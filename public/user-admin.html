@@ -1,39 +1,78 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-<link rel="stylesheet" href="css/bundle.css" />
-<link rel="stylesheet" href="css/admin.css" />
-<link rel="stylesheet" href="css/table-4.css" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wayward</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/bundle.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/table-4.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="" class="logo"><img src="img/Logo.png" alt="" /> Admin</a>
+        <nav class="navbar">
+          <a href="index.html">Log Out</a>
+          <div class="user-profile">
+            <p>Username</p>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </nav>
+      </header>
+    </section>
+    <section class="sidebar">
+      <div class="sidebar-content">
+        <ul>
+          <li>
+            <a href="admin.html"><i class="fa-solid fa-table"></i>Product</a>
+          </li>
+          <li>
+            <a href="user-admin.html"><i class="fa-solid fa-user"></i>Users</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </section>
 
-<section class="admin">
-  <div class="admin-container">
-    <div class="admin-content">
-      <h3>Users</h3>
-    </div>
-    <table class="table-4">
-      <tr>
-        <th>User Name</th>
-        <th>User Email</th>
-        <th>Email Password</th>
-        <th>Actions</th>
-      </tr>
-      <tr>
-        <td>Admin</td>
-        <td>Admin</td>
-        <td></td>
-        <td class="actions">
-          <a href="edit.html" class="edit-admin"><i class="fa-solid fa-pen"></i></a>
-          <a href="delete.html" class="delete-admin"><i class="fa-solid fa-trash-can"></i></a>
-        </td>
-      </tr>
-      <tr>
-        <td>User</td>
-        <td>User@gmail.com</td>
-        <td></td>
-        <td class="actions">
-          <a href="edit.html" class="edit-admin"><i class="fa-solid fa-pen"></i></a>
-          <a href="delete.html" class="delete-admin"><i class="fa-solid fa-trash-can"></i></a>
-        </td>
-      </tr>
-    </table>
-  </div>
-</section>
+    <section class="admin">
+      <div class="admin-container">
+        <div class="admin-content">
+          <h3>Users</h3>
+        </div>
+        <table class="table-4">
+          <tr>
+            <th>User Name</th>
+            <th>User Email</th>
+            <th>Email Password</th>
+            <th>Actions</th>
+          </tr>
+          <tr>
+            <td>Admin</td>
+            <td>Admin</td>
+            <td>()</td>
+            <td class="actions">
+              <button>
+                <a href="CRUD-update-admin.html" class="edit-admin"><i class="fa-solid fa-pen"></i></a>
+              </button>
+              <button class="delete-admin"><i class="fa-solid fa-trash-can"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>User</td>
+            <td>User@gmail.com</td>
+            <td>()</td>
+            <td class="actions">
+              <button>
+                <a href="CRUD-update-admin.html" class="edit-admin"><i class="fa-solid fa-pen"></i></a>
+              </button>
+              <button class="delete-admin"><i class="fa-solid fa-trash-can"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

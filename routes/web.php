@@ -29,3 +29,9 @@ Route::post('crud_add_product',[AdminController::class,'crud_add_product'])->mid
 Route::get('crud_delete_product/{id}',[AdminController::class,'crud_delete_product'])->middleWare(['auth','admin']);
 Route::get('crud_edit_product/{id}',[AdminController::class,'crud_edit_product'])->middleWare(['auth','admin']);
 Route::post('crud_update_product/{id}',[AdminController::class,'crud_update_product'])->middleWare(['auth','admin']);
+
+Route::get('view_user',[AdminController::class,'view_user'])->middleWare(['auth','admin']);
+
+Route::get('crud_user_delete/{id}',[AdminController::class,'crud_user_delete'])->middleWare(['auth','admin']);
+Route::get('crud_user_edit/{id}',[AdminController::class,'crud_user_edit'])->middleWare(['auth','admin']);
+Route::post('crud_user_update/{id}',[AdminController::class,'crud_user_update'])->middleWare(['auth','admin']);

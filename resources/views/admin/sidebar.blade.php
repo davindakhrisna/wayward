@@ -1,12 +1,12 @@
-<section class="sidebar">
-    <div class="sidebar-content">
-      <ul>
-        <li>
-          <button><i class="fa-solid fa-table"></i><a href="{{url('view_product')}}">Product</a></button>
-        </li>
-        <li>
-          <button><i class="fa-solid fa-user"></i><a href="{{url('view_user')}}">Users</a></button>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <section class="sidebar">
+      <div class="sidebar-content">
+        <ul>
+          <li>
+            <a href="{{url('view_product')}}"><i class="fa-solid fa-table"></i>Product</a>
+          </li>
+          <li>
+            <a href="{{url('view_user')}}"><i class="fa-solid fa-user"></i>Users</a>
+          </li>
+        </ul>
+      </div>
+    </section>

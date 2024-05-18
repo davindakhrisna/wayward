@@ -1,0 +1,41 @@
+.table-6 td {
+  vertical-align: top;
+}
+
+.admin-product-image {
+  width: 100%;
+}
+
+.table-6 tr th:first-child {
+  width: 15%;
+  max-width: 15%;
+}
+
+.table-6 th:nth-child(2) {
+  width: 21.25%;
+  max-width: 21.25%;
+}
+
+.table-6 th:nth-child(3) {
+  width: 21.25%;
+  max-width: 21.25%;
+}
+
+.table-6 th:nth-child(4) {
+  width: 21.25%;
+  max-width: 21.25%;
+}
+
+.table-6 th:nth-child(5) {
+  width: 21.25%;
+  max-width: 21.25%;
+}
+
+.table-6 th:last-child {
+  width: 10%;
+}
+
+.table-6 td:last-child {
+  display: flex;
+  flex: content middle;
+}

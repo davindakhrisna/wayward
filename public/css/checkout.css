@@ -1,0 +1,215 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 15%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  width: 8rem;
+  height: auto;
+  margin-right: 0.2rem;
+}
+
+h3 i {
+  margin-right: 0.2rem;
+}
+
+.fa-chevron-left {
+  color: #ff9f29;
+  margin-right: 0.5rem;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-desc-content {
+  max-width: 55%;
+}
+
+.checkout-desc-alamat {
+  display: flex;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #faf3e3;
+}
+
+.checkout-desc-alamat i {
+  color: #faf3e3;
+  margin-right: 1rem;
+}
+
+h5,
+h3,
+h6 {
+  text-align: start;
+}
+
+.checkout-desc-product {
+  display: flex;
+  padding-bottom: 1rem;
+}
+
+.checkout-desc-product img {
+  max-width: 30%;
+  border-radius: 0.2rem;
+  margin-right: 1rem;
+}
+
+.product-description h4 {
+  text-align: start;
+  color: #ff9f29;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.checkout-payment {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-cc-apple-pay,
+.fa-cc-visa,
+.fa-people-robbery {
+  margin-right: 0.2rem;
+}
+
+.checkout-desc-method {
+  margin-top: 1rem;
+}
+
+.checkout-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.6rem 0;
+}
+
+.checkout-shipping {
+  font-weight: 600;
+}
+
+.header-shipping {
+  color: #ff9f29;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.radio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 0.7rem;
+  background-color: #ff9f29;
+  color: #faf3e3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+input[type="radio"]:checked + .radio-button {
+  background-color: #faf3e3;
+  color: #000;
+}
+
+.radio-button:hover {
+  background-color: #faf3e3;
+  color: #000;
+}
+
+.checkout-summary-details {
+  margin-bottom: 0.3rem;
+}
+
+.detail-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0;
+}
+
+.detail-order .detail-head,
+.detail-order label {
+  font-weight: 600;
+  color: #faf3e3;
+  font-size: 0.9rem;
+}
+
+.datetime-input {
+  background-color: #ff9f29;
+  color: #faf3e3;
+  border-radius: 5px;
+  padding: 0.3rem 0 0.3rem 1rem;
+  font-size: 0.9rem;
+  width: 60%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.order-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-price p {
+  font-size: 0.9rem;
+}
+
+.place-order {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  background-color: #ff9f29;
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+
+.place-order:hover {
+  background-color: #faf3e3;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 90%;
+  }
+  header {
+    padding: 2rem;
+  }
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .checkout-payment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 80%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+}

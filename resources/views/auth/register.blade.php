@@ -30,6 +30,12 @@
             <x-input-error :messages="$errors->get('address')" class="mt-2" />
         </div>
 
+        <div class="mt-4">
+            <x-input-label for="usertype" :value="__('Role')" />
+            <x-text-input id="usertype" class="block mt-1 w-full" type="text" name="usertype" :value="old('usertype')" autocomplete=NULL />
+            <x-input-error :messages="$errors->get('usertype')" class="mt-2" />
+        </div>
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
