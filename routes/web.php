@@ -6,11 +6,12 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 
 Route::get('/',[HomeController::class,'home']);
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('user/dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -18,6 +19,12 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+Route::get('/mycart',[UserController::class,'mycart']);
+Route::get('/product',[UserController::class,'product']);
+Route::get('/mycart/checkout',[UserController::class,'checkout']);
+
+Route::post('add_order',[UserController::class,'add_order']);
 
 require __DIR__.'/auth.php';
 
