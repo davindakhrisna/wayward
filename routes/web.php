@@ -20,6 +20,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get('/product/details',[UserController::class,'detail']);
+
 Route::get('/mycart',[UserController::class,'mycart']);
 Route::get('/product',[UserController::class,'product']);
 Route::get('/mycart/checkout',[UserController::class,'checkout']);

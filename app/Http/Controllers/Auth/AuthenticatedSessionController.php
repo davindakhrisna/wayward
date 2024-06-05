@@ -24,6 +24,8 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
+        toastr()->timeOut(5000)->closeButton()->addSuccess('Berhasil Login');
+
         $request->authenticate();
 
         $request->session()->regenerate();
@@ -41,6 +43,8 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request): RedirectResponse
     {
+        toastr()->timeOut(5000)->closeButton()->addSuccess('Berhasil Logout');
+
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();

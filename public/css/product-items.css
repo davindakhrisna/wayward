@@ -8,10 +8,11 @@
 
 .product-content {
   max-width: 23%;
+  padding: 0.5rem 0;
 }
 
 .product-content:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .product-content h4 {
@@ -27,6 +28,6 @@
   width: 100%;
 }
 
-.price{
+.price {
   font-weight: 600;
 }

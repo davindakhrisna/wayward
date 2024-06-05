@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     @include('user/checkout/css')
+    <link rel="icon" href="{{asset('img/favicon.png')}}" type="image/x-icon">
   </head>
   <body>
     <section>

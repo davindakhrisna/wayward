@@ -3,7 +3,7 @@
   <head>
 
     @include('home.css')
-
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
   </head>
   <body>
 
